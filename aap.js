@@ -16,6 +16,7 @@ app.use(
         extended: false
     })
 );
+app.use(session({ secret: "indiaisgreat" }));
 
 app.use("/", router);
 
